@@ -1,0 +1,11 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://anish231003:28ISlVWrqHdk@ep-muddy-tree-a1nd83vx.ap-southeast-1.aws.neon.tech/neondb?sslmode=require"
+}
