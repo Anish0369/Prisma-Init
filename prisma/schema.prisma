@@ -9,3 +9,22 @@ datasource db {
   provider = "postgresql"
   url      = ""
 }
+
+// /* prefer Documentation */
+model User1 {
+  id         Int      @id @default(autoincrement())
+  username   String   @unique
+  password   String
+  firstName  String? 
+  lastName   String?
+}
+
+model Todo {
+  id        Int      @id @default(autoincrement())
+  title     String
+  done      Boolean  @default(false)
+  description String?
+  userId      Int
+}
+
+
